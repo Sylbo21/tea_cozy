@@ -1,0 +1,162 @@
+/* BASE */
+
+html {
+  box-sizing: border-box;
+  font-size: 22px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* HEADER */
+
+header {
+  height: 69px;
+  padding: 10px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img#logo {
+  height: 50px;
+}
+
+header nav ul.menu {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+}
+
+header nav ul.menu li {
+  margin-right: 1em;
+}
+
+/* MAIN */
+
+main {
+  position: relative;
+  top: 69px;
+  padding: 0 30px;
+  width: 100%
+}
+
+/* Hero section */
+
+.hero {
+  height: 700px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero .title {
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+/* Featured section */
+
+.featured {
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 15px;
+}
+
+.card img {
+  width: 300px;
+  height:200px;
+  margin-bottom: 10px;
+}
+
+.card figcaption {
+  font-weight: bold;
+}
+
+/* Locations section */
+
+.locations {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 500px;
+  background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 50px;
+}
+
+.locations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.location {
+  background-color: black;
+  width: 300px;
+  margin: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  top: 69px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.contact {
+  height: 200px;
+}
+
+.copyright {
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+}
